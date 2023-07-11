@@ -5,11 +5,19 @@ import {
   removeTodoActionCreator,
   removeAllActionCreator,
 } from "../actions";*/
+
+/*
 import {
   addTodoActionCreator,
   removeTodoActionCreator,
   removeAllActionCreator,
-} from "../ducks/todoDuck";
+} from "../ducks/todoDuck";*/
+
+import {
+  addTodo as addTodoActionCreator,
+  removeTodo as removeTodoActionCreator,
+  removeAll as removeAllActionCreator,
+} from "../actions/todoAction";
 import TodoApp from "../../components/TodoApp";
 
 function mapStateToProps(state, ownProps) {
