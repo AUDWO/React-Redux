@@ -42,3 +42,5 @@ const reducer = handleActions(
   },
   initialState
 );
+
+export default reducer;
