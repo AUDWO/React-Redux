@@ -19,7 +19,7 @@ const reducer = handleActions(
       return {
         ...state,
         pending: true,
-        data: [],
+        //data: [],
         error: null,
       };
     },
@@ -28,7 +28,7 @@ const reducer = handleActions(
       return {
         ...state,
         pending: false,
-        data: action.payload.data,
+        data: state.concat(action.payload.data),
       };
     },
 
